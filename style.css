@@ -1,0 +1,260 @@
+/*Carousel Adjustments*/
+
+.carousel-inner{
+	color: #EDEFEC;
+	background-color: #444444;
+	height: 100vh;
+	width: 100vw;
+}
+
+.carousel-indicators li.active{
+	width: 100px;
+	height: 30px;
+	text-indent: 0;
+	text-align: center;
+	color: #444444;
+  background-color: #EDEFEC;
+}
+
+.button{
+	background-color: #444444;
+	border-radius: 10%;
+	color: white;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s
+}
+
+.button:hover{
+	background-color: #EDEFEC;
+	border-radius: 10%;
+	color: #444444;
+	-webkit-transition: 0.8s;
+	-o-transition: 0.8s;
+	transition: 0.8s;
+}
+
+.button:focus {
+  outline: none;
+}
+
+
+/*First Page*/
+.title{
+	text-decoration: underline;
+}
+
+
+#flip {
+  height:80px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  -webkit-animation: show 10s linear infinite;
+          animation: show 10s linear infinite;
+}
+
+@-webkit-keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+.aboutMe{
+	-webkit-animation: fade 4s;
+	        animation: fade 4s;
+	color: white;
+	margin: 0 auto;
+	width: 500px;
+}
+
+@-webkit-keyframes fade {
+    from {
+    	opacity: 0;
+    }
+    to   {
+    	opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+    	opacity: 0;
+    }
+    to   {
+    	opacity: 1;
+    }
+}
+
+
+/*Second Page: Projects*/
+
+.project-group{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	margin: 0 auto;
+	max-width: 80%;
+
+}
+
+.projects{
+	-webkit-animation: fade 4s;
+	        animation: fade 4s;
+}
+
+img{
+	max-width: 30vw;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+img:hover{
+	max-width: 32vw;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.modal-content{
+	background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+
+
+/*Third Page: Contacts*/
+
+.footer{
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	height: 100vh;
+	width: 80vw;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 0 auto;
+}
+
+a{
+	text-align: center;
+}
+
+.footerIcons{
+	color: #EDEFEC;
+	width: 40%;
+}
+
+
+
+
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+	.aboutMe{
+		-webkit-animation: fade 5s;
+		        animation: fade 5s;
+		width: 250px;
+		margin: 0 auto;
+	}
+
+	.project-group{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		margin: 0 auto;
+		max-width: 80%;
+
+	}
+
+
+	img{
+		max-width: 60vw;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	img:hover{
+		max-width: 60vw;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+
+	.footer{
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		margin: 0 auto;
+		height: 80vh;
+		width: 80vw;
+
+	}
+
+	a{
+		text-align: center;
+	}
+
+	.footerIcons{
+		color: #EDEFEC;
+		width: 30%;
+	}
+
+
+
+}
