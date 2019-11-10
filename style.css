@@ -220,6 +220,7 @@ a{
 		-webkit-transition: 0.5s;
 		-o-transition: 0.5s;
 		transition: 0.5s;
+		margin-bottom: 5%;
 	}
 
 	img:hover{
@@ -227,6 +228,7 @@ a{
 		-webkit-transition: 0.5s;
 		-o-transition: 0.5s;
 		transition: 0.5s;
+		margin-bottom: 5%;
 	}
 
 
