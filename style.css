@@ -120,12 +120,14 @@
 	display: flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
+	align-items: center;
 	margin: 0 auto;
 	max-width: 80%;
+	height: 80vh;
 }
 
 .projects{
@@ -181,7 +183,6 @@ a{
 }
 
 .footerIcons:hover{
-	color: #EDEFEC;
 	width: 45%;
 }
 
@@ -224,21 +225,16 @@ a{
 
 	}
 
-
-	img{
-		max-width: 60vw;
-		-webkit-transition: 0.5s;
-		-o-transition: 0.5s;
-		transition: 0.5s;
-		margin-bottom: 5%;
+	.projects{
+		margin: 5% 0;
+		max-width: 50%;
+		-webkit-transition: all ease-in-out 0.5s;
+		-o-transition: all ease-in-out 0.5s;
+		transition: all ease-in-out 0.5s;
 	}
 
-	img:hover{
-		max-width: 60vw;
-		-webkit-transition: 0.5s;
-		-o-transition: 0.5s;
-		transition: 0.5s;
-		margin-bottom: 5%;
+	.projects:hover{
+		max-width: 60%;
 	}
 
 
@@ -267,6 +263,9 @@ a{
 		width: 30%;
 	}
 
+	.footerIcons:hover{
+		width: 35%;
+	}
 
 
 }
