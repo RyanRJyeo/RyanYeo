@@ -126,27 +126,20 @@
 	    justify-content: space-around;
 	margin: 0 auto;
 	max-width: 80%;
-
 }
 
 .projects{
-	-webkit-animation: fade 4s;
-	        animation: fade 4s;
+	max-width: 80%;
+	-webkit-transition: all ease-in-out 0.5s;
+	-o-transition: all ease-in-out 0.5s;
+	transition: all ease-in-out 0.5s;
 }
 
-img{
-	max-width: 30vw;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
+.projects:hover{
+	max-width: 90%;
 }
 
-img:hover{
-	max-width: 32vw;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
-}
+
 
 .modal-content{
 	background-color: rgba(255, 255, 255, 0.9) !important;
@@ -182,6 +175,14 @@ a{
 .footerIcons{
 	color: #EDEFEC;
 	width: 40%;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.footerIcons:hover{
+	color: #EDEFEC;
+	width: 45%;
 }
 
 
