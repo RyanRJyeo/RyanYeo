@@ -3,6 +3,7 @@
 .carousel-inner{
 	color: #EDEFEC;
 	background-color: #444444;
+	background-image: linear-gradient(315deg, #444444 0%, #28313b 74%);
 	height: 100vh;
 	width: 100vw;
 }
@@ -17,9 +18,10 @@
 }
 
 .button{
-	background-color: #444444;
+	background-color: none;
 	border-radius: 10%;
 	color: white;
+	font-size: 50px;
 	-webkit-transition: 0.8s;
 	-o-transition: 0.8s;
 	transition: 0.8s
@@ -84,10 +86,12 @@
   100% {margin-top:-270px;}
 }
 
-
-.aboutMe{
+.fade4{
 	-webkit-animation: fade 4s;
 	        animation: fade 4s;
+}
+
+.aboutMe{
 	color: white;
 	margin: 0 auto;
 	width: 500px;
@@ -123,22 +127,22 @@
 	-ms-flex-direction: row;
 	flex-direction: row;
 	-ms-flex-pack: distribute;
+	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: center;
 	margin: 0 auto;
-	max-width: 80%;
+	width: 80%;
 	height: 80vh;
 }
 
 .projects{
-	max-width: 80%;
+	width: 300px;
 	-webkit-transition: all ease-in-out 0.5s;
 	-o-transition: all ease-in-out 0.5s;
 	transition: all ease-in-out 0.5s;
 }
 
 .projects:hover{
-	max-width: 90%;
+	width: 320px;
 }
 
 
@@ -265,6 +269,10 @@ a{
 
 	.footerIcons:hover{
 		width: 35%;
+	}
+
+	.button{
+		font-size: 20px;
 	}
 
 
