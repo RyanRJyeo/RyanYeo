@@ -42,10 +42,32 @@
 
 
 /*First Page*/
+.pageone{
+	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/pageone.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+
 .title{
+	margin-top: 5%;
 	text-decoration: underline;
 }
 
+.intro{
+  background-color: rgba(255,255,255,0.7);
+  color: #000;
+  /* the magic property */
+  mix-blend-mode: screen;
+	border-radius: 10px;
+	margin: 2% auto;
+	padding: 2% 5% 2%;
+	width: fit-content;
+}
 
 #flip {
   height:80px;
@@ -53,7 +75,6 @@
 }
 
 #flip > div > div {
-  color:#fff;
   height:45px;
   margin-bottom:45px;
   display:inline-block;
@@ -118,6 +139,18 @@
 
 /*Second Page: Projects*/
 
+.pagetwo{
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('images/pagetwo.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+
+
 .project-group{
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -135,6 +168,7 @@
 }
 
 .projects{
+	border-radius: 10px;
 	width: 300px;
 	-webkit-transition: all ease-in-out 0.5s;
 	-o-transition: all ease-in-out 0.5s;
@@ -154,6 +188,18 @@
 
 
 /*Third Page: Contacts*/
+
+
+.pagethree{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/pagethree.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
 
 .footer{
 	-webkit-box-align: center;
@@ -203,14 +249,14 @@ a{
 		font-size: 20px;
 	}
 
-	.smol{
+	.aboutMe{
 		font-size: 15px;
 	}
 
 	.aboutMe{
 		-webkit-animation: fade 5s;
 		        animation: fade 5s;
-		width: 250px;
+		width: 220px;
 		margin: 0 auto;
 	}
 
@@ -218,6 +264,7 @@ a{
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
+		flex-wrap: nowrap;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
@@ -226,19 +273,18 @@ a{
 		    justify-content: space-around;
 		margin: 0 auto;
 		max-width: 80%;
-
 	}
 
 	.projects{
-		margin: 5% 0;
-		max-width: 50%;
+		margin: 2% 0;
+		max-width: 40%;
 		-webkit-transition: all ease-in-out 0.5s;
 		-o-transition: all ease-in-out 0.5s;
 		transition: all ease-in-out 0.5s;
 	}
 
 	.projects:hover{
-		max-width: 60%;
+		max-width: 50%;
 	}
 
 
