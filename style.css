@@ -4,8 +4,11 @@
 
 .carousel-inner{
 	color: #EDEFEC;
-	background-color: linear-gradient(315deg, #444444 0%, #28313b 74%);
 	/*background-image: linear-gradient(315deg, #444444 0%, #28313b 74%);*/
+	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('images/pagetwo.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 100vh;
 	width: 100vw;
 }
@@ -44,18 +47,6 @@
 
 
 /*First Page*/
-.pageone{
-	background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7)) ), url('images/pageone.jpg');
-	background: -o-linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/pageone.jpg');
-	background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('images/pageone.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
-}
-
 
 .title{
 	/*margin-top: 5%;*/
@@ -145,19 +136,6 @@
 
 /*Second Page: Projects*/
 
-.pagetwo{
-	background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)) ), url('images/pagetwo.jpg');
-	background: -o-linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('images/pagetwo.jpg');
-	background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('images/pagetwo.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
-}
-
-
 
 .project-group{
 	display: -webkit-box;
@@ -197,19 +175,6 @@
 
 
 /*Third Page: Contacts*/
-
-
-.pagethree{
-	background: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)) ), url('images/pagethree.jpg');
-	background: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/pagethree.jpg');
-	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/pagethree.jpg');
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	width: 100vw;
-	height: 100vh;
-}
 
 
 .footer{
